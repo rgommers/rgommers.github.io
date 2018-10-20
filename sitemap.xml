@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://rgommers.github.io/2018/10/numpy-roadmap-writing-process/</loc>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://rgommers.github.io/2018/10/2018-numfocus-summit---a-summary/</loc>
     <lastmod>2018-10-13T00:00:00+00:00</lastmod>
   </url>
@@ -25,31 +30,31 @@
   
   <url>
     <loc>https://rgommers.github.io/tags/numpy/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rgommers.github.io/post/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rgommers.github.io/categories/python/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rgommers.github.io/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rgommers.github.io/tags/roadmap/</loc>
-    <lastmod>2018-10-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
