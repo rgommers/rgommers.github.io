@@ -6,17 +6,26 @@
     <description>Recent content in Python on Ralf Gommers | Reflections</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgommers.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>The making of the NumPy Roadmap</title>
+      <link>https://rgommers.github.io/2018/10/the-making-of-the-numpy-roadmap/</link>
+      <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgommers.github.io/2018/10/the-making-of-the-numpy-roadmap/</guid>
+      <description>NumPy now has a roadmap - long overdue and a major step forward for the project. We&amp;rsquo;re not done yet (see my previous post on this topic) and updating the technical roadmap with new ideas and priorities should happen regularly. Despite everything having been done in the open, via minutes of in-person meetings and shared roadmap drafts on the numpy-discussion mailing list, it turns out that it&amp;rsquo;s not completely clear to the community and even some maintainers how we got to this point.</description>
+    </item>
+    
+    <item>
       <title>2018 NumFOCUS Summit - a summary</title>
-      <link>https://rgommers.github.io/2018/10/2018-numfocus-summit---a-summary/</link>
+      <link>https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/</link>
       <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://rgommers.github.io/2018/10/2018-numfocus-summit---a-summary/</guid>
+      <guid>https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/</guid>
       <description>During 22-25 Sep 2018 I attended the NumFOCUS Summit. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders). I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy. Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.</description>
     </item>
     

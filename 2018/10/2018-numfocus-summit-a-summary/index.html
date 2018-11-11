@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.51 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Ralf Gommers">
+<meta name="keywords" content="">
+<meta name="description" content="During 22-25 Sep 2018 I attended the NumFOCUS Summit. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders). I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy. Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.">
+
+
+<meta property="og:description" content="During 22-25 Sep 2018 I attended the NumFOCUS Summit. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders). I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy. Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2018 NumFOCUS Summit - a summary">
+<meta name="twitter:title" content="2018 NumFOCUS Summit - a summary">
+<meta property="og:url" content="https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+<meta property="twitter:url" content="https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+<meta property="og:site_name" content="Ralf Gommers | Reflections">
+<meta property="og:description" content="During 22-25 Sep 2018 I attended the NumFOCUS Summit. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders). I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy. Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.">
+<meta name="twitter:description" content="During 22-25 Sep 2018 I attended the NumFOCUS Summit. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders). I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy. Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2018-10-13T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2018-10-13T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Python">
+    
+  
+  
+    
+      <meta property="article:tag" content="NumFOCUS">
+    
+      <meta property="article:tag" content="NumPy">
+    
+      <meta property="article:tag" content="roadmap">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/5f88830d19f9c83e2ddfd913496c5025?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/5f88830d19f9c83e2ddfd913496c5025?s=640">
+
+
+    <title>2018 NumFOCUS Summit - a summary</title>
+
+    <link rel="icon" href="https://rgommers.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://rgommers.github.io/css/style-nnm2spxvve8onlujjlegkkytaehyadd4ksxc1hyzzq9a2wvtrgbljqyulomn.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://rgommers.github.io/">Ralf Gommers | Reflections</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://rgommers.github.io/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/5f88830d19f9c83e2ddfd913496c5025?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://rgommers.github.io/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/5f88830d19f9c83e2ddfd913496c5025?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Ralf Gommers</h4>
+        
+          <h5 class="sidebar-profile-bio">Physicist turned data scientist, with a passion for pushing the scientific Python ecosystem forward</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rgommers.github.io/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rgommers.github.io/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rgommers.github.io/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rgommers.github.io/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rgommers.github.io/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/rgommers" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/ralf-gommers-97317b4/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://rgommers.github.io/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      2018 NumFOCUS Summit - a summary
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-10-13T00:00:00Z">
+        
+  October 13, 2018
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://rgommers.github.io/categories/python">Python</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<p>During 22-25 Sep 2018 I attended the <a href="https://summit.numfocus.org">NumFOCUS Summit</a>. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders).  I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy.  Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.  In this post I&rsquo;ll focus on topics that are relevant to NumPy.  Most ideas/answers about NumPy in this post are mine, and not in any way &ldquo;official NumPy policy&rdquo;.</p>
+
+<h2 id="the-numpy-roadmap">The NumPy Roadmap</h2>
+
+<p>During the Summit I gave two 15 minute presentations about the NumPy roadmap.  The first one (<a href="https://www.slideshare.net/RalfGommers/numfocussummit2018roadmapssession">slides</a>) was aimed at explaining how we constructed the NumPy roadmap, and what other projects could learn from the process we went through.  The second one (<a href="https://www.slideshare.net/RalfGommers/numpy-roadmap-presentation-at-numfocus-forum">slides</a>) was much more about the roadmap itself - what&rsquo;s on it, and why.</p>
+
+<p>Here is the key idea from the first presentation:</p>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+
+<div class="figure fig-75 center" >
+  
+    <img class="fig-img" src="https://rgommers.github.io/images/numpy_roadmaps_hierarchy.png"  alt="NumPy roadmap types and audiences">
+  
+   
+    <span class="caption">NumPy roadmap types and audiences</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+<p>What we have today is the &ldquo;big picture technical roadmap&rdquo;.  Most projects that had a roadmap had something similar.  Creating a roadmap aimed at potential funders is much less natural to most people, however it&rsquo;s critical if we are aiming to attract significant funding in a sustainable way.</p>
+
+<p>One valid criticism of what we have today was about the &ldquo;NumPy Scope&rdquo; page.  That page starts with saying &ldquo;this is not an aspirational definition of the scope of NumPy &hellip;&rdquo; - and the obvious question is: <em>why not</em>?  Other than that though, the roadmap and ideas about different having both a technical and non-technical roadmap targeted at different audiences were very well received.</p>
+
+<p>For the second presentation, what took me the most time to prepare is to put the &ldquo;scope and vision&rdquo; of NumPy on a single slide.  Here&rsquo;s the end result:</p>
+
+
+ 
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+  
+
+
+<div class="figure fig-75 center" >
+  
+    <img class="fig-img" src="https://rgommers.github.io/images/numpy_scope_and_vision_summit2018.png"  alt="My view on the scope of and vision for NumPy">
+  
+   
+    <span class="caption">My view on the scope of and vision for NumPy</span>
+  
+</div>
+
+  <div style="clear:both;"></div>
+
+
+<p>Throughout the Summit I received a lot of very positive feedback on and questions about both NEP 18 (<code>__array_function__</code>) and the easier custom dtypes plan.  Many projects are interested in using either one or both of those features.  For example, there were a number of people discussing units libraries (<a href="https://unyt.readthedocs.io/en/latest/">unyt</a>, <a href="https://pint.readthedocs.io/en/latest/">pint</a>, <a href="http://docs.astropy.org/en/stable/units/">astropy.units</a>) - which would likely benefit from being able to use custom dtypes with units.</p>
+
+<p>Looking at the state of the roadmaps of all projects, it&rsquo;s clear that there&rsquo;s a lot of work to do.  About half of the projects did not have a roadmap at all and of the ones that did, about half were out of date or very incomplete.  Finally no project had a clear non-technical roadmap.  As a community we still have a lot of work to do here &hellip;</p>
+
+<h2 id="what-would-numpy-do-with-funding">What would NumPy do with funding?</h2>
+
+<p>A separate workshop session was held about funding.  It had synergy with the roadmap session, the most interesting exercise was &ldquo;if you had funding for 3-5 years, what would you work on and how much would it cost?&rdquo;.  Here are the answers I came up with (MY == man-year, 1 person working full-time for a year):</p>
+
+<ol>
+<li>Redesign numpy.org, as well as a broader (ecosystemwide) website.  Cost: 0.25 MY + $40k.</li>
+<li>Implement and mature interoperability protocols (such as <code>__array_function__</code>).  Cost: 1-2 MY.  Should include at least one downstream adoption for sparse arrays, distributed arrays and GPU arrays.</li>
+<li>A sustained positive balance of merged vs open PRs and closed vs opened issues.  Cost: 1 MY/yr on top of volunteer effort.</li>
+<li>A community liaison for NumPy with rest of the ecosystem.  Cost: 0.5-1 MY/yr.</li>
+</ol>
+
+<p>Other interesting questions with my answers were:</p>
+
+<p><em>What does NumPy need to sustain/survive?</em>
+Time for: base level of maintenance, release management and leadership.
+Funds for: a website redesign.</p>
+
+<p><em>What does NumPy need to grow?</em></p>
+
+<ul>
+<li>1 manager / community leader</li>
+<li>2-5 full-time devs</li>
+<li>in-person core team workshops</li>
+</ul>
+
+<p><em>What could you do if you had more funds?</em></p>
+
+<ul>
+<li>Grant/roadmap/vision/&hellip;. writing</li>
+<li>Building more industry relations &amp; writing key user stories</li>
+<li>GSoC type projects (incl mentoring).  Paying for mentors&rsquo; time is the critical part (in general, not limited to students).</li>
+<li>Cross-stack testing.</li>
+</ul>
+
+<h2 id="sustainability-goals-for-numpy">Sustainability goals for NumPy</h2>
+
+<p>At the end of the sustainability workshop, we were asked to formulate one goal related to each of the workshop session topics.  Here is what we (Allan and I) came up with:</p>
+
+<p><em>First a meta-goal: we know that these are more goals than we can realistically achieve given time constraints of the people we need to take actions here. A key goal for us is to improve the bandwidth of those people over time, so we don’t have to say this same thing next year.</em></p>
+
+<p>Now the topic goals:</p>
+
+<ul>
+<li>Roadmap goals:
+
+<ul>
+<li>write the non-technical roadmap in the next 12 months</li>
+<li>make clear(er) how the roadmap was constructed, and who was (and will be) involved</li>
+</ul></li>
+<li>Goal on governance: document who controls the direction of grant-funded people and how.</li>
+<li>Funding goal:
+
+<ul>
+<li>contribute to a joint NumFOCUS proposal (as needed)</li>
+<li>figure out if/how each core dev could use funding</li>
+</ul></li>
+<li>Infrastructure goal: make Azure Pipelines work (<em>note: already done!</em>)</li>
+<li>Culture/CoC goal: we just adopted a CoC, evaluate how that functions</li>
+<li>Unconference goal: take (positive) feedback on NEP 18 back to project (<em>note: see above in this post</em>)</li>
+</ul>
+
+<h2 id="other-notes">Other notes</h2>
+
+<p>It was interesting to see and discuss new business models that aim to make open source more sustainable by giving maintainers more options to get paid.  E.g. Quansight, Tidelift and Open Source Answers, which all have different (and complementary) aims and models.  I intend to write about this in more detail later.</p>
+
+<p>Corporate programs to match employees&rsquo; giving to charity can be an interesting source of project income as well.  E.g. Microsoft will donate $25 to a project for every hour that one of its employees works on that project, via Benevity.</p>
+
+<p>Steve Dower gave an interesting talk/demo of Azure Pipelines.  Microsoft really does seem committed to giving back to the open source community, and I&rsquo;m happy to see that we already have adopted Azure Pipelines as part of the NumPy CI setup.  Another interesting feature (that we don&rsquo;t yet use) is that Azure offers private PyPI servers (could perhaps remove the need for maintaining wheels.scipy.org?).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The Summit was a great experience for me this year.  Not everything went well and on the last day I ran out of steam, but I would recommend anyone going next year if given the chance.  I&rsquo;ve met a large number of interesting people, and learned about new tools, business models and project maintenance ideas.  Finally, having to present twice on the NumPy roadmap really forced me to think about where the project is (or could be) going.</p>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://rgommers.github.io/tags/numfocus/">NumFOCUS</a>
+
+  <a class="tag tag--primary tag--small" href="https://rgommers.github.io/tags/numpy/">NumPy</a>
+
+  <a class="tag tag--primary tag--small" href="https://rgommers.github.io/tags/roadmap/">roadmap</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://rgommers.github.io/2018/10/the-making-of-the-numpy-roadmap/" data-tooltip="The making of the NumPy Roadmap">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 Ralf Gommers. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://rgommers.github.io/2018/10/the-making-of-the-numpy-roadmap/" data-tooltip="The making of the NumPy Roadmap">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frgommers.github.io%2F2018%2F10%2F2018-numfocus-summit-a-summary%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Frgommers.github.io%2F2018%2F10%2F2018-numfocus-summit-a-summary%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/5f88830d19f9c83e2ddfd913496c5025?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Ralf Gommers</h4>
+    
+      <div id="about-card-bio">Physicist turned data scientist, with a passion for pushing the scientific Python ecosystem forward</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Data scientist
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Vancouver, Canada
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://rgommers.github.io/2018/10/the-making-of-the-numpy-roadmap/">
+                <h3 class="media-heading">The making of the NumPy Roadmap</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Oct 10, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">NumPy now has a roadmap - long overdue and a major step forward for the project. We&rsquo;re not done yet (see my previous post on this topic) and updating the technical roadmap with new ideas and priorities should happen regularly. Despite everything having been done in the open, via minutes of in-person meetings and shared roadmap drafts on the numpy-discussion mailing list, it turns out that it&rsquo;s not completely clear to the community and even some maintainers how we got to this point.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://rgommers.github.io/2018/10/2018-numfocus-summit-a-summary/">
+                <h3 class="media-heading">2018 NumFOCUS Summit - a summary</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Oct 10, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">During 22-25 Sep 2018 I attended the NumFOCUS Summit. It consisted of two 2-day parts: the Sustainability Workshop (attended by 1-3 maintainers of almost all sponsored projects), and the Project Forum (attended by a subset of those maintainers plus a number of key industry stakeholders). I attended wearing two hats: as a member of the NumFOCUS Board of Directors, and as a maintainer of NumPy. Besides me, NumPy was represented by Allan Haldane, whom I had the pleasure to meet in person for the first time.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         2 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://rgommers.github.io/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://rgommers.github.io/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/rgommers.github.io\/2018\/10\/2018-numfocus-summit-a-summary\/';
+          
+            this.page.identifier = '\/2018\/10\/2018-numfocus-summit-a-summary\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'rgommers';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
