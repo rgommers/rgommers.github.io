@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Ralf Gommers | Reflections</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://rgommers.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maintainers</title>
+      <link>https://rgommers.github.io/tags/maintainers/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgommers.github.io/tags/maintainers/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Numfocus</title>
@@ -30,11 +39,29 @@
     </item>
     
     <item>
+      <title>Open Source</title>
+      <link>https://rgommers.github.io/tags/open-source/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgommers.github.io/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Roadmap</title>
       <link>https://rgommers.github.io/tags/roadmap/</link>
       <pubDate>Sat, 20 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://rgommers.github.io/tags/roadmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sustainability</title>
+      <link>https://rgommers.github.io/tags/sustainability/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgommers.github.io/tags/sustainability/</guid>
       <description></description>
     </item>
     

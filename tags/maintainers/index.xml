@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maintainers on Ralf Gommers | Reflections</title>
+    <link>https://rgommers.github.io/tags/maintainers/</link>
+    <description>Recent content in Maintainers on Ralf Gommers | Reflections</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://rgommers.github.io/tags/maintainers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The cost of an open source contribution</title>
+      <link>https://rgommers.github.io/2019/06/the-cost-of-an-open-source-contribution/</link>
+      <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rgommers.github.io/2019/06/the-cost-of-an-open-source-contribution/</guid>
+      <description>Open source is massively successful. Some say it&amp;rsquo;s eating the world, although to my ears that phrasing doesn&amp;rsquo;t sound entirely like a good thing. Open source maintainers are always in need of help, and over the past years I&amp;rsquo;ve seen a lot of focus on ways open source projects can grow their communities and gain new contributors. Guidance on how to go about finding new contributors is easily found. E.</description>
+    </item>
+    
+  </channel>
+</rss>
